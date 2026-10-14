@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #141e30, #243b55);
+            font-family: "Microsoft YaHei", system-ui, sans-serif;
+            color: #f0f4f8;
+            padding: 60px 20px;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        .card {
+            background: rgba(255,255,255,0.06);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 22px;
+            padding: 45px 40px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            /* 入场动画 */
+            animation: fadeUp 0.8s ease-out;
+        }
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        h1 {
+            text-align: center;
+            font-size: 34px;
+            margin-bottom: 8px;
+            background: linear-gradient(90deg,#74b9ff,#00cec9);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .subhead {
+            text-align: center;
+            color: #b2bec3;
+            margin-bottom: 35px;
+            letter-spacing: 2px;
+        }
+        .section {
+            margin: 28px 0;
+        }
+        .sec-title {
+            font-size:18px;
+            color:#81ecec;
+            margin-bottom:12px;
+            border-left:3px solid #00cec9;
+            padding-left:12px;
+        }
+        p {
+            line-height:1.8;
+            color:#dfe6e9;
+            font-size:16px;
+        }
+        .tags {
+            display:flex;
+            flex-wrap:wrap;
+            gap:10px;
+            margin-top:12px;
+        }
+        .tag {
+            background:rgba(0,206,201,0.15);
+            border:1px solid rgba(0,206,201,0.3);
+            color:#81ecec;
+            padding:7px 16px;
+            border-radius:30px;
+            font-size:14px;
+            transition:0.3s;
+        }
+        .tag:hover {
+            background:rgba(0,206,201,0.35);
+            transform: translateY(-2px);
+        }
+        footer {
+            text-align:center;
+            margin-top:40px;
+            color:#8899a6;
+            font-size:13px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <h1>关于我</h1>
+        <div class="subhead">自我介绍</div>
+
+        <div class="section">
+            <div class="sec-title">基本信息</div>
+            <p>姓名：牛梓舟<br>
+            院校：沈阳理工大学</p >
+        </div>
+
+        <div class="section">
+            <div class="sec-title">个人简介</div>
+            <p>我是一名对机器人视觉充满热情的学生。从零开始学习 Python、OpenCV，研究颜色识别、轮廓检测、HSV阈值滑动条调参，准备参加理工杯视觉项目。
+            <br><br>
+            喜欢把理论变成看得见的效果，愿意沉下心调试代码、排查问题；不畏惧零基础起步，希望不断积累，在机器视觉与机器人竞赛方向走得更远。</p >
+        </div>
+
+        <div class="section">
+            <div class="sec-title">技能方向</div>
+            <div class="tags">
+                <span class="tag">Python基础</span>
+                <span class="tag">OpenCV视觉识别</span>
+                <span class="tag">HSV阈值调参</span>
+                <span class="tag">轮廓检测</span>
+                <span class="tag">Git版本管理</span>
+                <span class="tag">HTML/CSS</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="sec-title">兴趣爱好</div>
+            <p>编程调试、机器人竞赛、游戏、硬件与电脑性能研究、数学学习。</p >
+        </div>
+
+        <!-- 新增：作者留言，和上面板块格式完全一致 -->
+        <div class="section">
+            <div class="sec-title">作者留言</div>
+            <p>老大，我还加入了电协参加理工杯比赛，花更多时间去研究opencv来去参赛，所以这个简介写的比较简陋，望海涵</p >
+        </div>
+
+        <footer>
+            — 持续学习 · 稳步前进 —
+        </footer>
+    </div>
+</div>
+</body>
+</html>
